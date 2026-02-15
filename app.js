@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const path = require('path');
 
@@ -11,10 +11,10 @@ const port = 3000;
 
 // Create connection to MySQL
 const db = mysql.createConnection({
-    host: 'testdb-1.c34egoce037f.ap-south-1.rds.amazonaws.com',
-    user: 'root',
+    host: 'database-1.c9cm4o24iz64.ap-south-1.rds.amazonaws.com',
+    user: 'admin',
     password: '12345678',
-    database: 'testdb_1'
+    database: 'database-1'
 });
 
 // Connect to MySQL
